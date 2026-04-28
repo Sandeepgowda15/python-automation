@@ -1,3 +1,3 @@
-a = int(input("Enter a: "))
-b = int(input("Enter b: "))
-print("Sum:", a + b)
+a = 10
+b = 20
+print( a + b)
