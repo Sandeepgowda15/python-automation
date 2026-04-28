@@ -1,6 +1,11 @@
-import os
-import time
+import subprocess
 
-while True:
-    os.system("top -b -n1 | head -5")
-    time.sleep(60)
+print("Checking CPU usage...\n")
+
+result = subprocess.run(
+    ["top", "-b", "-n", "1"],
+    capture_output=True,
+    text=True
+)
+
+print(result.stdout)
