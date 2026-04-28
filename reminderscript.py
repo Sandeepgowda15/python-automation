@@ -1,6 +1,6 @@
 import time
 
-print("Reminder will show in 10 seconds...")
-time.sleep(10)
+print("Reminder will show in 45 seconds...")
+time.sleep(45)
 
 print("⏰ Time to take a break!")
