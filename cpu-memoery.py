@@ -1,8 +1,7 @@
 import psutil
-import time
 
-while True:
-    print("CPU Usage:", psutil.cpu_percent(), "%")
-    print("Memory Usage:", psutil.virtual_memory().percent, "%")
-    print("-" * 30)
-    time.sleep(2)
+cpu = psutil.cpu_percent(interval=1)
+memory = psutil.virtual_memory().percent
+
+print("CPU Usage:", cpu, "%")
+print("Memory Usage:", memory, "%")
